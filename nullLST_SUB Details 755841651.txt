@@ -1,0 +1,290 @@
++++    HLR9820        2019-02-15 12:22:42
+SMU    #065138
+%%LST SUB: ISDN="94755841651", DETAIL=TRUE;%%
+SUCCESS0001:Operation is successful
+
+                         HLRSN = 31
+                          IMSI = 413050140111375
+                          ISDN = 94755841651
+                       ISDN_ID = 1
+                   DEFAULTCALL = Telephony (TS11)
+                        DSCODE = Telephony (TS11)
+                      CardType = USIM
+                           NAM = BOTH
+                      CATEGORY = COMMON
+"LOCK"
+                            IC = FALSE
+                            OC = FALSE
+
+                      GPRSLOCK = FALSE
+
+"SABLOCK"
+                            IC = FALSE
+                            OC = FALSE
+
+"Basic Service"
+                    Telephony (TS11)
+                    Emergency Call (TS12)
+                    Short Message MT_PP (TS21)
+                    Short Message MO_PP (TS22)
+                    General-DataCDS  (BS30)
+                   DefaultCall = Telephony (TS11)
+
+"ODB Data"
+                         ODBSS = FALSE
+                         ODBOC = NOBOC
+                         ODBIC = NOBIC
+                        ODBPB1 = FALSE
+                        ODBPB2 = FALSE
+                        ODBPB3 = FALSE
+                        ODBPB4 = FALSE
+                       ODBENTE = FALSE
+                       ODBINFO = FALSE
+                       ODBROAM = BROHPLMNC
+                        ODBRCF = NOBRCF
+                        ODBECT = NOBECT
+                       ODBDECT = FALSE
+                       ODBMECT = FALSE
+                        ODBPOS = NOBPOS
+                    ODBPOSTYPE = BOTH
+
+"SS Data"
+                           CFU = PROV
+                           NCS = FALSE
+                           COU = SUBSCRIBER
+                           BSG = ALL
+                        STATUS = PROV
+                           CFB = PROV
+                           NFS = FALSE
+                           NCS = FALSE
+                           COU = SUBSCRIBER
+                           BSG = ALL
+                        STATUS = PROV
+                         CFNRY = PROV
+                           NFS = FALSE
+                           NCS = FALSE
+                           COU = SUBSCRIBER
+                           FTN = 94755841681
+                           BSG = TS1X
+                  NotReplyTime = 20
+                        STATUS = PROV | REG | ACT
+                         CFNRC = PROV
+                           NCS = FALSE
+                           COU = SUBSCRIBER
+                           FTN = 94773336408
+                           BSG = TS1X
+                        STATUS = PROV | REG | ACT
+                           CFD = PROV
+                           NFS = FALSE
+                           NCS = FALSE
+                   SUPINTERCFD = FALSE
+                      VALIDCCF = CFNRc
+                           FTN = 94751111111
+                           BSG = TS1X
+                  NotReplyTime = 30
+                        STATUS = PROV | REG | ACT
+                            CD = NOTPROV
+                          BAOC = NOTPROV
+                          BOIC = PROV
+                      BOICEXHC = NOTPROV
+                          BORO = NOTPROV
+                          BAIC = NOTPROV
+                       BICROAM = NOTPROV
+                         CBCOU = OPERATOR
+                          CLIP = PROV
+                          CLIR = NOTPROV
+                          COLP = NOTPROV
+                          COLR = NOTPROV
+                           ECT = NOTPROV
+                            CW = PROV
+                           BSG = TS1X
+                         CWAIT = PROV | ACT
+                           BSG = BS3X
+                         CWAIT = PROV | ACT
+                          HOLD = PROV
+                          MPTY = PROV
+                            MC = NOTPROV
+                          AOCI = NOTPROV
+                          AOCC = NOTPROV
+                           CUG = NOTPROV
+                          UUS1 = NOTPROV
+                          UUS2 = NOTPROV
+                          UUS3 = NOTPROV
+                         SMSCF = NOTPROV
+             plmn-specificSS-1 = NOTPROV
+             plmn-specificSS-2 = NOTPROV
+             plmn-specificSS-3 = NOTPROV
+             plmn-specificSS-4 = NOTPROV
+             plmn-specificSS-5 = NOTPROV
+             plmn-specificSS-6 = NOTPROV
+             plmn-specificSS-7 = NOTPROV
+             plmn-specificSS-8 = NOTPROV
+             plmn-specificSS-9 = PROV
+             plmn-specificSS-A = NOTPROV
+             plmn-specificSS-B = NOTPROV
+             plmn-specificSS-C = NOTPROV
+             plmn-specificSS-D = NOTPROV
+             plmn-specificSS-E = NOTPROV
+             plmn-specificSS-F = NOTPROV
+                          CNAP = NOTPROV
+            allplmn-specificSS = NOTPROV
+"TIF-CSI"
+                        TIFCSI = NOTPROV
+"VLR/SGSN Roaming Restrict"
+                       VLRLIST = 2
+                       TPLNAME = Airtel_Roaming_VLR
+                      SGSNLIST = 2
+                       TPLNAME = AIRTEL postpaid
+"GPRS Data"
+                 CHARGE_GLOBAL = NORMAL
+                        CNTXID = 1
+                       PDPTYPE = IPV4
+                        ADDIND = DYNAMIC ADDRESS
+                        RELCLS = ACKRLCPRODT
+                      DELAYCLS = DELAY2
+                        PRECLS = NORMAL
+                       PEAKTHR = 4000 OCT
+                       MEANTHR = BEST_EFFORT
+                    ARPRIORITY = NORMAL
+                        ERRSDU = NODETECT
+                      DELIVERY = NO
+                    TRAFFICCLS = INTERACT
+                    MAXSDUSIZE = 1500 OCT
+                      MAXBRUPL = 1024K
+                        RESBER = 0.0001
+                        SDUERR = 0.00001
+                   TRANSFERDEL = 90MS
+                    TRAFFICPRI = PRIORITY2
+                     MAXGBRUPL = 1K
+                     MAXGBRDWL = 1K
+                   MAXEXTBRDWL = 21M
+                           APN = airtellive
+                         VPLMN = FALSE
+                        CHARGE = NORMAL
+
+                          SMDP = MSC
+                        NLRInd = NONE
+                           ALS = NOTPROV
+                          VVDN = NOTPROV
+                           ARD = NOTPROV
+                          CARP = NOTPROV
+                      RROption = ALL_PLMNS
+                           VBS = NOTPROV
+                          VGCS = NOTPROV
+                         EMLPP = NOTPROV
+                        FMInit = NOTPROV
+                  FMSupervisor = NOTPROV
+                      FMRemote = NOTPROV
+                           IST = NOTPROV
+                           DIC = NOTPROV
+
+"Dynamic Status Information For GSM"
+                        VlrNum = 947500002
+                        MscNum = 947500002
+            MsPurgedForNonGprs = FALSE
+                    VLRInHplmn = TRUE
+              VLRInHomeCountry = TRUE
+                     VLRInArea = FALSE
+                RequireCheckSS = FALSE
+RoamingRestrictInMscDueToUnsupportedFeature
+                               = FALSE
+    MscOrVlrAreaRoamingRestrict
+                               = FALSE
+    ODBarredForUnsupportedCamel
+                               = FALSE
+          SupportedCamelPhase1 = TRUE
+          SupportedCamelPhase2 = TRUE
+          SupportedCamelPhase3 = TRUE
+          SupportedCamelPhase4 = FALSE
+               SRIMsrnCfActive = TRUE
+           ZoneCodeStatusAtMsc = zoneCodesSupported
+          longGroupIDSupported = FALSE
+             basicISTSupported = FALSE
+           istCommandSupported = FALSE
+   SuperChargerSupportedForGsm = FALSE
+                ECATEGORYAtMsc = FALSE
+                        LSFLAG = FALSE
+                     CSUPLTIME = 2019-02-09 11:37:37
+
+            BaocForVlrRestrict = FALSE
+
+"Dynamic Status Information For GPRS"
+                       SgsnNum = 947500015
+               SgsnAddressType = IPV4
+                   SgsnAddress = 117.99.129.117
+                   SgsnInHplmn = TRUE
+               MsPurgedForGprs = TRUE
+             SgsnInHomeCountry = TRUE
+                    SgsnInArea = FALSE
+    RoamingRestrictInSgsnDueToUnsupportedFeature
+                               = FALSE
+       SgsnAreaRoamingRestrict = FALSE
+    ODBarredForUnsupportedCamelForGprs
+                               = FALSE
+                     PSUPLTIME = 2019-02-05 13:13:31
+                   PSPURGETIME = 2019-02-15 07:51:14
+          SupportedCamelPhase3 = TRUE
+          SupportedCamelPhase4 = FALSE
+  SuperChargerSupportedForGprs = FALSE
+          ZoneCodeStatusAtSgsn = zoneCodesSupported
+"Short Message Dynamic Data for GSM"
+                          MCEF = FALSE
+                          MNRF = FALSE
+                          MNRR = No Reason for Non-GPRS
+
+"Short Message Dynamic Data for GPRS"
+                          MCEF = FALSE
+                          MNRG = FALSE
+                          MNRR = No Reason
+    SupportedShortMessageMT-PP = FALSE
+    SupportedShortMessageMO-PP = FALSE
+
+"ODB Supported Features For GSM"
+                BarredSSAccess = TRUE
+    BarredOutgoingEntertainmentCall
+                               = TRUE
+    BarredOutgoingInformationCall
+                               = TRUE
+    BarredOutgoingInternationalCallExHC
+                               = TRUE
+    BarredOutgoingInternationalCall
+                               = TRUE
+         BarredAllOutgoingCall = TRUE
+                  BarredAllECT = TRUE
+           BarredChargeableECT = TRUE
+        BarredInternationalECT = TRUE
+           BarredInterzonalECT = TRUE
+                    BarredDECT = TRUE
+                    BarredMECT = TRUE
+
+"ODB Supported Features For GPRS"
+         BarredAllOutgoingCall = TRUE
+    BarredOutgoingInternationalCall
+                               = TRUE
+    BarredOutgoingInternationalCallExHC
+                               = TRUE
+    Barring of Packet Oriented Services
+                               = TRUE
+
+"Unsupported Supplementary Service Feature"
+                       UnsupSS = plmn-specificSS-9::PLMN specific supplemental service 9
+
+
+"Supported LCS"
+    MSC Supported LCS Capability Set1
+                               = TRUE
+    MSC Supported LCS Capability Set2
+                               = TRUE
+    SGSN Supported LCS Capability Set2
+                               = FALSE
+
+"Featured Service Supported Features"
+                           ALS = FALSE
+                          VVDN = FALSE
+
+
+Total count = 230
+
+There is together 1 report
+
+---   END
