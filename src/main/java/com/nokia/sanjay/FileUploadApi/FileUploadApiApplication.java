@@ -6,8 +6,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Arrays;
+import java.util.Optional;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -35,11 +39,13 @@ public class FileUploadApiApplication extends SpringBootServletInitializer {
 		SpringApplication.run(FileUploadApiApplication.class, args);
 	}
 
-	@RequestMapping(method = RequestMethod.POST, consumes = MediaType.MULTIPART_FORM_DATA_VALUE, path = "/uploadFile", produces = MediaType.TEXT_PLAIN_VALUE)
+	@RequestMapping(method = RequestMethod.POST, consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.TEXT_PLAIN_VALUE, path = "/uploadFile")
 	public ResponseEntity<Object> uploadFile(@RequestParam(name = "file") MultipartFile uploadedFile,
-			HttpServletRequest request) {
+			HttpServletRequest request, HttpServletResponse response) {
 
-		ResponseEntity<Object> responseEntity = new ResponseEntity<Object>("File Uploaded Successfully", HttpStatus.OK);
+		ResponseEntity<Object> responseEntity = null;
+
+		responseEntity = new ResponseEntity<Object>("File Uploaded Successfully", HttpStatus.OK);
 
 		new File(System.getProperty("user.dir") + "//Uploads//").mkdirs();
 		File newFile = new File(
@@ -47,7 +53,12 @@ public class FileUploadApiApplication extends SpringBootServletInitializer {
 						+ "_" + String.valueOf(LocalTime.now()).replaceAll("[:]", ".") + "__"
 						+ request.getSession().getId() + "__" + uploadedFile.getOriginalFilename());
 
-		System.out.println("Session id : " + request.getSession().getId());
+		System.out.println("Session id : " + readCookie("JSESSIONID", request.getCookies()));
+		
+		Cookie uiColorCookie = new Cookie("color", "red");
+		response.addCookie(uiColorCookie);
+		
+		System.out.println("cookies received are : "+request.getCookies());
 
 		System.out.println("value of the property : " + env.getProperty("sanjay"));
 		try {
@@ -98,6 +109,13 @@ public class FileUploadApiApplication extends SpringBootServletInitializer {
 		request.getSession().invalidate();
 
 		return responseEntity;
+
+	}
+	public Optional<String> readCookie(String key, Cookie[] cookies) {
+	    return Arrays.stream(cookies)
+	      .filter(c -> key.equals(c.getName()))
+	      .map(Cookie::getValue)
+	      .findAny();
 	}
 
 }
